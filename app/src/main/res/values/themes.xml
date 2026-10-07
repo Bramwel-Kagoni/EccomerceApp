@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.EccomerceApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.EccomerceApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/brand_background</item>
+    </style>
+
+    <!-- System splash (Android 12+ always shows one). It hands over to the animated Compose splash. -->
+    <style name="Theme.EccomerceApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.EccomerceApp</item>
+    </style>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug only: allow plain HTTP so the app can reach `python manage.py runserver`
+     on the emulator (10.0.2.2) or your computer's LAN IP from a real phone. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
